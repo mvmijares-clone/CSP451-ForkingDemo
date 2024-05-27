@@ -2,11 +2,10 @@
 
 def set_of_numbers(num_array):
 
-    index = 0
-    while index < len(num_array):
-        print("Number is: " + str(num_array[index]))
-        index += 1
-
+#More efficient Loop
+    for num in num_array:
+        print("Number is: " + str(num))
+        
 if __name__ == "__main__":
     numbers = [1,2,3,4,5]
     set_of_numbers(numbers)
